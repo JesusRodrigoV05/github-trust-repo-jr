@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Connect to AWS
-        uses: aws-action/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v1
         with:
             role-session-name: awssyncsession
             role-to-assume: ${{ secrets.AWS_IAM_ROLE }}
